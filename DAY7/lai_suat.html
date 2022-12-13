@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+       SỐ TIỀN VAY:<input id="so_tien_vay" type="number"/><br>
+       LÃI SUẤT:<input id="lai_suat" type="number"/><br>
+       SỐ NĂM:<input id="so_nam" type="number"/><br>
+       <button type="button" onclick="hien_thi()">HIỂN THỊ
+
+       </button>
+    </div>
+    <div id="ket_qua"></div>
+    <script>
+        function hien_thi(){
+            let tienvay = document.getElementById("so_tien_vay").value;
+            let lai = document.getElementById("lai_suat").value;
+            let nam = document.getElementById("so_nam").value;
+            let ketqua = tienvay * lai * nam + tienvay;
+            alert("Sau ${year} năm số tiền nhận được là: ${total}");
+
+        }
+    </script>
+    <script>
+        let money, year, interest;
+        money = parseInt(prompt("số tiền cần gửi"));
+        year = parseInt(prompt("số năm gửi"));
+        interest = parseFloat(prompt("lãi "));
+
+        let total = money + money * year * interest;
+        alert('Sau ${year} năm số tiền nhận được là: ${total}');
+
+    </script>
+</body>
+</html>

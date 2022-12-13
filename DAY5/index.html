@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>chèn audio</h3>
+    <audio controls>
+        <source src="./media_horse.ogv" type="audio/ogg"/>
+    </audio><br>
+    <h3>chèn video</h3>
+    <video controls width="500px" height="300px">
+        <source src="./mov_bbb.mp4" type="video/mp4"/>
+    </video>
+    <div>
+        <h1>
+            anti    
+            LÊ MĨ LỆ&copy<br>
+            H<sub>2</sub>SO<sub>4</sub><br>
+            122<sup>3</sup>/35<sup>2</sup>
+       </h1>
+    </div>
+    <form action="xu_ly_thong_tin.php" method="get">
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            Họ và tên: 
+            <input name="hoten" type="text"><br>
+            Giới tính:
+            <input name="gioitinh" value="1" type="radio" checked>Nu
+            <input name="gioitinh" value="0" type="radio">Nam<br>
+            So thich:
+            <input type="checkbox">du lich
+            <input type="checkbox">doc sach
+            <input type="checkbox">nau an
+            <input type="checkbox">xem phim
+            <BR>
+            Trinh do:
+            <select name="hoc van">
+                <option value="THPT">THPT</option>
+                <option value="DAIHOC">DAI HOC</option>
+                <option value="CAOHOC">CAO HOC</option>
+            </select>
+            <br>
+            Mat khau:
+            <input name="matkhau" type="password">
+        </fieldset>
+        <button type="submit"> Gửi</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
